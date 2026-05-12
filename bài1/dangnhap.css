@@ -1,0 +1,53 @@
+    /* Đưa toàn bộ nội dung ra giữa màn hình */
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        background-color: #e9ecef;
+        font-family: sans-serif;
+    }
+
+    /* Trang trí khung Form */
+    #regForm {
+        display: flex;
+        flex-direction: column; /* Xếp các ô nhập theo hàng dọc */
+        gap: 15px;             /* Khoảng cách giữa các ô */
+        background: white;
+        padding: 25px;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        width: 320px;
+    }
+
+    /* Các ô nhập liệu */
+    .o-nhap {
+        display: flex;
+        flex-direction: column;
+    }
+
+    input {
+        padding: 8px;
+        margin-top: 5px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+    /* Thanh hiển thị độ mạnh mật khẩu */
+    #thanh-do {
+        height: 5px;
+        width: 0%;
+        margin-top: 5px;
+        transition: 0.3s; /* Hiệu ứng chạy mượt hơn */
+        border-radius: 2px;
+    }
+
+    #nut-gui {
+        background-color: #28a745;
+        color: white;
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }   

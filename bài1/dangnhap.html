@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Trang Đăng Ký Đơn Giản</title>
+    <link rel="stylesheet" href="dangnhap.css">
+</head>
+<body>
+
+    <form id="regForm">
+        <h2>Đăng Ký Tài Khoản</h2>
+
+        <div class="o-nhap">
+            <label>Tên đăng nhập:</label>
+            <input type="text" id="username" minlength="5" maxlength="15" placeholder="Nhập 5-15 ký tự">
+        </div>
+
+        <div class="o-nhap">
+            <label>Mật khẩu:</label>
+            <input type="password" id="password" placeholder="Phải có chữ và số">
+            <div id="thanh-do"></div>
+            <p id="thong-bao-mat-khau">Mức độ: Chưa nhập</p>
+        </div>
+
+        <div class="o-nhap">
+            <label>Ảnh đại diện:</label>
+            <input type="file" id="profilePic" accept=".jpg, .png">
+        </div>
+
+        <button type="submit" id="nut-gui">Đăng Ký Ngay</button>
+    </form>
+
+    <script src="dangnhap.js"></script>
+</body>
+</html>
